@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Navbar</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav {
+        background-color: cadetblue;
+        padding: 10px;
+      }
+
+      .nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        display: block;
+      }
+
+      .nav .dropdown-content {
+        display: none;
+      }
+
+      .nav .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: rgb(72, 117, 118);
+        min-width: 150px;
+      }
+
+      .nav .dropdown .dropdown-content a:hover {
+        background-color: rgb(54, 84, 84);
+      }
+
+      .nav .login-btn {
+        background-color: rgb(75, 85, 85);
+        color: #fff;
+        padding: 10px 30px;
+        border: none;
+      }
+
+      .nav .login-btn:hover {
+        background-color: rgb(91, 95, 95);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-container">
+      <h2>Variation 3: Horizontal with dropdown</h2>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+              <a href="#">Our Sttory</a>
+              <a href="#">Team</a>
+              <a href="#">Contact</a>
+            </div>
+          </li>
+          <li><a href="#">Products</a></li>
+          <button class="login-btn">Login</button>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
