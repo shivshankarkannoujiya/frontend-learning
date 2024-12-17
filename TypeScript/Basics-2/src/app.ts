@@ -70,4 +70,36 @@ type User2 = {
 
 // But, they let you do `few` extra things
 // 1.
-// TODO: 
+// TODO: Union
+// ⚙️ let's say you want to print the `id` of a user, Which can be number or string
+// ❌ Can not do with `iinterface`
+
+type greetArg = string | number;
+function greet(id: greetArg) {
+    console.log(`id: ${id}`)
+}
+
+// greet(1)
+// greet("abc");
+
+// 2
+// TODO: intersection
+// ⚙️ What if you what to create a type that has every property of multiple `types/interfaces`
+
+type Employees = {
+    name: string,
+    startDate: Date
+}
+
+interface Manager {
+    name: string,
+    department: string
+}
+
+type TeachLead = Employees & Manager;
+
+const TeamLead: TeachLead = {
+    name: "Abhi",
+    startDate: new Date(),
+    department: "xyz"
+}
