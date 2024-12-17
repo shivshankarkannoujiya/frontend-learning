@@ -103,3 +103,31 @@ const TeamLead: TeachLead = {
     startDate: new Date(),
     department: "xyz"
 }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// TODO: Array
+// ⚙️ Given an array of posistive integers as input, return the max value in Array
+
+const maxValue = (arr: number[]): number => {
+    let maxVal = 0;
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] > maxVal) {
+            maxVal = arr[i];
+        }
+    }
+    return maxVal;
+}
+
+
+// ⚙️ given a list of user, filter out the users that are legal (age > 18)
+interface User {
+    firstname: string,
+    lastname: string,
+    age: number
+}
+
+
+function filterUser(users: User[]): User[]{
+    return users.filter((user) => user.age > 18)
+}
