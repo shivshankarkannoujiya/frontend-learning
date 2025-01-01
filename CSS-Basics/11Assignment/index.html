@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    ">
+    <style>
+      body {
+        background-color: #1a1a1a;
+        height: 100vh;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .wrapper {
+        display: grid;
+        height: 100vh;
+        grid-template-areas: 'header header header' 'main main main' 'footer footer footer';
+        /* margin-bottom: 20px; */
+      }
+
+
+      .header {
+        grid-area: header;
+        background-color: rgb(158, 153, 153);
+        height: 40px;
+      }
+
+      .mid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      ul{
+        list-style: none;
+        display: flex;
+        align-items:center;
+        gap: 70px;
+        cursor: pointer;
+      }
+
+      .logo > img{
+        height: 100px;
+        width: 100px;
+      }
+
+      .main {
+        grid-area: main;
+        background-color: 2px solid white;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 30px;
+      }
+      .footer {
+        grid-area: footer;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo">
+          <img src="./logo.png" alt="logo">
+        </div>
+        <div class="mid">
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="7%" y1="24%" x2="93%" y2="76%"><stop offset="5%" stop-color="#9900ef"></stop><stop offset="95%" stop-color="#8ED1FC"></stop></linearGradient></defs><path d="M 0,500 L 0,125 C 83.5230769230769,156.5 167.0461538461538,188 238,186 C 308.9538461538462,184 367.3384615384615,148.5 448,122 C 528.6615384615385,95.5 631.6000000000001,78 731,83 C 830.3999999999999,88 926.2615384615383,115.5 1001,133 C 1075.7384615384617,150.5 1129.3538461538462,158 1199,155 C 1268.6461538461538,152 1354.3230769230768,138.5 1440,125 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="7%" y1="24%" x2="93%" y2="76%"><stop offset="5%" stop-color="#9900ef"></stop><stop offset="95%" stop-color="#8ED1FC"></stop></linearGradient></defs><path d="M 0,500 L 0,291 C 76.26923076923075,307.0179487179487 152.5384615384615,323.0358974358974 226,326 C 299.4615384615385,328.9641025641026 370.11538461538464,318.874358974359 451,329 C 531.8846153846154,339.125641025641 623,369.4666666666667 703,351 C 783,332.5333333333333 851.8846153846152,265.25897435897434 926,261 C 1000.1153846153848,256.74102564102566 1079.4615384615386,315.49743589743593 1166,331 C 1252.5384615384614,346.50256410256407 1346.2692307692307,318.75128205128203 1440,291 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
