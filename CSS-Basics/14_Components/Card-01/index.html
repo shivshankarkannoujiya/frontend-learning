@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Overview Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1A1A1A;
+        }
+
+        .card {
+            width: 400px;
+            height: 200px;
+            background-color: #2D2D2D;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            position: relative;
+            border: 1px solid #fff;
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .right {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .right p {
+            margin: 10px 0 0;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .arrow {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            color: #5EF1A6;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="left">
+            <img src="https://t4.ftcdn.net/jpg/09/19/71/05/240_F_919710552_INOPXnUrx7bucG5AiCYO88ggNXgoaqfu.jpg" alt="Portfolio Illustration">
+        </div>
+        <div class="right">
+            <h2>Portfolio <br> Overview</h2>
+            <p>Real-time insights into all your crypto assets.</p>
+        </div>
+        <div class="arrow">↗</div>
+    </div>
+</body>
+</html>
